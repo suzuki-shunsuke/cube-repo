@@ -56,7 +56,9 @@
 			"url": "https://github.com/suzuki-shunsuke/${package_name}/releases/download/${version}/${package_name}_${version##v}_${os}_${arch}.tar.gz",
 			"version": "v2.0.0",
       "files": [
-        "name": "gencfg"
+        {
+          "name": "gencfg"
+        }
       ]
 		},
     "terraform-provider-graylog": {
