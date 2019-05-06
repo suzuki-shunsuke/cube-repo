@@ -23,8 +23,8 @@
 			"version": "0.19.5"
 		},
 		"drone-cli": {
-			"url": "https://github.com/drone/${package_name}/releases/download/v${version}/drone_${os}_${arch}.tar.gz",
-			"version": "1.1.0",
+			"url": "https://github.com/drone/${package_name}/releases/download/${version}/drone_${os}_${arch}.tar.gz",
+			"version": "v1.1.0",
 			"files": [
 				{
 					"name": "drone",
@@ -33,8 +33,8 @@
 			]
 		},
 		"gomic": {
-			"url": "https://github.com/suzuki-shunsuke/${package_name}/releases/download/v${version}/${package_name}_${version}_${os}_${arch}.tar.gz",
-			"version": "0.5.5-0"
+			"url": "https://github.com/suzuki-shunsuke/${package_name}/releases/download/${version}/${package_name}_${version}_${os}_${arch}.tar.gz",
+			"version": "v0.5.5-0"
 		},
 		"akoi": {
 			"url": "https://github.com/suzuki-shunsuke/${package_name}/releases/download/v${version}/${package_name}_${version}_${os}_${arch}.tar.gz",
