@@ -42,7 +42,7 @@
 		},
 		"jq": {
 			"url": "https://github.com/stedolan/jq/releases/download/jq-${version}/jq-osx-${arch}",
-			"version": 1.5,
+			"version": "1.5",
 			"archive_type": "unarchived"
 		},
 		"gria": {
