@@ -32,7 +32,7 @@
 			]
 		},
 		"gomic": {
-			"url": "https://github.com/suzuki-shunsuke/${package_name}/releases/download/${version}/${package_name}_${version}_${os}_${arch}.tar.gz",
+			"url": "https://github.com/suzuki-shunsuke/${package_name}/releases/download/${version}/${package_name}_${version##v}_${os}_${arch}.tar.gz",
 			"version": "v0.5.5-0"
 		},
 		"akoi": {
@@ -63,7 +63,7 @@
 		},
     "terraform-provider-graylog": {
       "archive_type": "gz",
-      "url": "https://github.com/suzuki-shunsuke/go-graylog/releases/download/${version}/${package_name}_${version##v}_${os}_${arch}.gz",
+      "url": "https://github.com/suzuki-shunsuke/go-graylog/releases/download/${version}/${package_name}_${version}_${os}_${arch}.gz",
 			"version": "v2.0.0-5",
       "files": [
         {
