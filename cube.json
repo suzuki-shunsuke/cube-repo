@@ -27,8 +27,7 @@
 			"version": "v1.1.0",
 			"files": [
 				{
-					"name": "drone",
-					"archive": "drone"
+					"name": "drone"
 				}
 			]
 		},
@@ -55,10 +54,13 @@
 		},
 		"go-gencfg": {
 			"url": "https://github.com/suzuki-shunsuke/${package_name}/releases/download/${version}/${package_name}_${version##v}_${os}_${arch}.tar.gz",
-			"version": "v2.0.0"
+			"version": "v2.0.0",
+      "files": [
+        "name": "gencfg"
+      ]
 		},
     "terraform-provider-graylog": {
-      "archive_type": "Gzip",
+      "archive_type": "gz",
       "url": "https://github.com/suzuki-shunsuke/go-graylog/releases/download/${version}/${package_name}_${version##v}_${os}_${arch}.gz",
 			"version": "v2.0.0-5",
       "files": [
