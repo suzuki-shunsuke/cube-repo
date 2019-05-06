@@ -1,4 +1,6 @@
 {
+  "bin_dir": "bin",
+  "link_path": "bin/${file_name}",
   "packages": {
     "consul": {
       "url": "https://releases.hashicorp.com/consul/${version}/consul_${version}_${os}_${arch}.zip",

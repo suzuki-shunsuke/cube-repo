@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "test": "cube install -n -c cube.json",
+    "jsonlint": "jsonlint -q cube.json",
+    "lint": "npm run jsonlint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm test",
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-angular": "^6.1.3",
+    "jsonlint": "^1.6.3",
+    "husky": "^1.1.3"
+  }
+}
