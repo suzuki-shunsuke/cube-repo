@@ -36,8 +36,8 @@
 			"version": "v0.5.5-0"
 		},
 		"akoi": {
-			"url": "https://github.com/suzuki-shunsuke/${package_name}/releases/download/v${version}/${package_name}_${version}_${os}_${arch}.tar.gz",
-			"version": "1.5.0"
+			"url": "https://github.com/suzuki-shunsuke/${package_name}/releases/download/${version}/${package_name}_${version##v}_${os}_${arch}.tar.gz",
+			"version": "v2.1.0"
 		},
 		"jq": {
 			"url": "https://github.com/stedolan/jq/releases/download/jq-${version}/jq-osx-${arch}",
