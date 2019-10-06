@@ -101,6 +101,11 @@
           "link_path": "${HOME}/.terraform.d/plugins/${file_name}_${version}"
         }
       ]
+    },
+    "kubectl": {
+      "archive_type": "unarchived",
+      "url": "https://storage.googleapis.com/kubernetes-release/release/${version}/bin/${os}/${arch}/kubectl",
+      "version": "v1.16.0"
     }
   }
 }
