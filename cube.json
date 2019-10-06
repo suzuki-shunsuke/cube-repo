@@ -106,6 +106,14 @@
       "archive_type": "unarchived",
       "url": "https://storage.googleapis.com/kubernetes-release/release/${version}/bin/${os}/${arch}/kubectl",
       "version": "v1.16.0"
+    },
+    "kustomize": {
+      "github_release": {
+        "owner": "kubernetes-sigs",
+        "asset_name": "kustomize_${version//\\//.}_${os}_${arch}"
+      },
+      "archive_type": "unarchived",
+      "version": "kustomize/v3.2.1"
     }
   }
 }
