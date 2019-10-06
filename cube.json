@@ -1,19 +1,24 @@
 {
-  "bin_dir": "bin",
+  "bin_dir": "bin/pkgs",
   "link_path": "bin/${file_name}",
   "packages": {
     "consul": {
       "url": "https://releases.hashicorp.com/consul/${version}/consul_${version}_${os}_${arch}.zip",
-      "version": "1.3.0"
+      "version": "1.5.1"
     },
     "durl": {
-      "url": "https://github.com/suzuki-shunsuke/${package_name}/releases/download/${version}/${package_name}_${version##v}_${os}_${arch}.tar.gz",
-      "version": "v0.8.0",
-      "update": "latest"
+      "github_release": {
+        "owner": "suzuki-shunsuke",
+        "asset_name": "${package_name}_${version##v}_${os}_${arch}.tar.gz"
+      },
+      "version": "v0.8.0"
     },
     "golangci-lint": {
-      "url": "https://github.com/golangci/${package_name}/releases/download/${version}/${package_name}-${version##v}-${os}-${arch}.tar.gz",
-      "version": "v1.15.0",
+      "github_release": {
+        "owner": "golangci",
+        "asset_name": "${package_name}-${version##v}-${os}-${arch}.tar.gz"
+      },
+      "version": "v1.16.0",
       "files": [
         {
           "archive": "golangci-lint-${version##v}-${os}-${arch}/golangci-lint"
@@ -22,10 +27,13 @@
     },
 		"consul-template": {
 			"url": "https://releases.hashicorp.com/consul-template/${version}/consul-template_${version}_${os}_${arch}.tgz",
-			"version": "0.19.5"
+			"version": "0.20.0"
 		},
 		"drone-cli": {
-			"url": "https://github.com/drone/${package_name}/releases/download/${version}/drone_${os}_${arch}.tar.gz",
+      "github_release": {
+        "owner": "drone",
+        "asset_name": "drone_${os}_${arch}.tar.gz"
+      },
 			"version": "v1.1.0",
 			"files": [
 				{
@@ -34,28 +42,46 @@
 			]
 		},
 		"gomic": {
-			"url": "https://github.com/suzuki-shunsuke/${package_name}/releases/download/${version}/${package_name}_${version##v}_${os}_${arch}.tar.gz",
+      "github_release": {
+        "owner": "suzuki-shunsuke",
+        "asset_name": "${package_name}_${version##v}_${os}_${arch}.tar.gz"
+      },
 			"version": "v0.5.5-0"
 		},
 		"akoi": {
-			"url": "https://github.com/suzuki-shunsuke/${package_name}/releases/download/${version}/${package_name}_${version##v}_${os}_${arch}.tar.gz",
+      "github_release": {
+        "owner": "suzuki-shunsuke",
+        "asset_name": "${package_name}_${version##v}_${os}_${arch}.tar.gz"
+      },
 			"version": "v2.1.0"
 		},
 		"jq": {
-			"url": "https://github.com/stedolan/jq/releases/download/jq-${version}/jq-osx-${arch}",
-			"version": "1.5",
+      "github_release": {
+        "owner": "stedolan",
+        "asset_name": "jq-osx-${arch}"
+      },
+			"version": "jq-1.5",
 			"archive_type": "unarchived"
 		},
 		"gria": {
-			"url": "https://github.com/suzuki-shunsuke/${package_name}/releases/download/v${version}/${package_name}_${version}_${os}_${arch}.tar.gz",
-			"version": "0.2.1"
+      "github_release": {
+        "owner": "suzuki-shunsuke",
+        "asset_name": "${package_name}_${version##v}_${os}_${arch}.tar.gz"
+      },
+			"version": "v0.2.1"
 		},
 		"git-rm-branch": {
-			"url": "https://github.com/suzuki-shunsuke/${package_name}/releases/download/${version}/${package_name}_${version}_${os}_${arch}.tar.gz",
+      "github_release": {
+        "owner": "suzuki-shunsuke",
+        "asset_name": "${package_name}_${version##v}_${os}_${arch}.tar.gz"
+      },
 			"version": "1.0.5"
 		},
 		"go-gencfg": {
-			"url": "https://github.com/suzuki-shunsuke/${package_name}/releases/download/${version}/${package_name}_${version##v}_${os}_${arch}.tar.gz",
+      "github_release": {
+        "owner": "suzuki-shunsuke",
+        "asset_name": "${package_name}_${version##v}_${os}_${arch}.tar.gz"
+      },
 			"version": "v2.0.0",
       "files": [
         {
@@ -64,8 +90,11 @@
       ]
 		},
     "terraform-provider-graylog": {
+      "github_release": {
+        "owner": "suzuki-shunsuke",
+        "asset_name": "${package_name}_${version}_${os}_${arch}.gz"
+      },
       "archive_type": "gz",
-      "url": "https://github.com/suzuki-shunsuke/go-graylog/releases/download/${version}/${package_name}_${version}_${os}_${arch}.gz",
 			"version": "v2.0.0-5",
       "files": [
         {
