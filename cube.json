@@ -25,77 +25,77 @@
         }
       ]
     },
-		"consul-template": {
-			"url": "https://releases.hashicorp.com/consul-template/${version}/consul-template_${version}_${os}_${arch}.tgz",
-			"version": "0.20.0"
-		},
-		"drone-cli": {
+    "consul-template": {
+      "url": "https://releases.hashicorp.com/consul-template/${version}/consul-template_${version}_${os}_${arch}.tgz",
+      "version": "0.20.0"
+    },
+    "drone-cli": {
       "github_release": {
         "owner": "drone",
         "asset_name": "drone_${os}_${arch}.tar.gz"
       },
-			"version": "v1.1.0",
-			"files": [
-				{
-					"name": "drone"
-				}
-			]
-		},
-		"gomic": {
+      "version": "v1.1.0",
+      "files": [
+        {
+          "name": "drone"
+        }
+      ]
+    },
+    "gomic": {
       "github_release": {
         "owner": "suzuki-shunsuke",
         "asset_name": "${package_name}_${version##v}_${os}_${arch}.tar.gz"
       },
-			"version": "v0.5.5-0"
-		},
-		"akoi": {
+      "version": "v0.5.5-0"
+    },
+    "akoi": {
       "github_release": {
         "owner": "suzuki-shunsuke",
         "asset_name": "${package_name}_${version##v}_${os}_${arch}.tar.gz"
       },
-			"version": "v2.1.0"
-		},
-		"jq": {
+      "version": "v2.1.0"
+    },
+    "jq": {
       "github_release": {
         "owner": "stedolan",
         "asset_name": "jq-osx-${arch}"
       },
-			"version": "jq-1.5",
-			"archive_type": "unarchived"
-		},
-		"gria": {
+      "version": "jq-1.5",
+      "archive_type": "unarchived"
+    },
+    "gria": {
       "github_release": {
         "owner": "suzuki-shunsuke",
         "asset_name": "${package_name}_${version##v}_${os}_${arch}.tar.gz"
       },
-			"version": "v0.2.1"
-		},
-		"git-rm-branch": {
+      "version": "v0.2.1"
+    },
+    "git-rm-branch": {
       "github_release": {
         "owner": "suzuki-shunsuke",
         "asset_name": "${package_name}_${version##v}_${os}_${arch}.tar.gz"
       },
-			"version": "1.0.5"
-		},
-		"go-gencfg": {
+      "version": "1.0.5"
+    },
+    "go-gencfg": {
       "github_release": {
         "owner": "suzuki-shunsuke",
         "asset_name": "${package_name}_${version##v}_${os}_${arch}.tar.gz"
       },
-			"version": "v2.0.0",
+      "version": "v2.0.0",
       "files": [
         {
           "name": "gencfg"
         }
       ]
-		},
+    },
     "terraform-provider-graylog": {
       "github_release": {
         "owner": "suzuki-shunsuke",
         "asset_name": "${package_name}_${version}_${os}_${arch}.gz"
       },
       "archive_type": "gz",
-			"version": "v2.0.0-5",
+      "version": "v2.0.0-5",
       "files": [
         {
           "link_path": "${HOME}/.terraform.d/plugins/${file_name}_${version}"
